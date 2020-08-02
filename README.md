@@ -1,7 +1,5 @@
 # Haneyuserbot
 
-# saskeuserbot
-
 <p align="center">
 <img src="https://telegra.ph/file/de0815276526fe546b647.jpg" alt="SASKE USERBOT">
 
@@ -13,12 +11,11 @@
 Best User Bot To Manage Your Telegram Account 
 ## Most PowerFul And Better And Secure
 
-## By Team #• 𝕊𝔸𝕊𝕂𝔼,™
+## By Team #𝒮𝒜𝒮𝒦ℰ,™
 ### For any query or want to know how it works...?
 
-**Saske : **
 <a href="https://t.me/saske_89"><img src="https://img.shields.io/badge/Telegram-%20ѕᴀѕᴋᴇ ʟ̤ɾʅ丂ɹɹɹȊɹɹɹ-red.svg?logo=Telegram"></a>
-**Haney : **
+ 
 <a href="https://t.me/saske_89"><img src="https://img.shields.io/badge/Telegram-%20𝙷𝙰𝙽𝙴𝚈 ،💕🕸 ₎⇣-red.svg?logo=Telegram"></a>
 
 
