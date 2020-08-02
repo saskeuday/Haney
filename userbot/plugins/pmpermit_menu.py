@@ -25,7 +25,7 @@ import telethon.sync
 from telethon.tl.functions.users import GetFullUserRequest
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon import events, errors, functions, types
-from userbot import ALIVE_NAME, LESS_SPAMMY
+from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd
 
 
@@ -100,7 +100,7 @@ async def _(event):
                      await borg.send_message(chat, TWO)
                      await asyncio.sleep(3)
                      await event.client(functions.contacts.BlockRequest(chat_id))
-         elif y == "5":
+         elif y == "4":
              await borg.send_message(chat,FIVE)
              response = await conv.get_response(chat)
              if not response.text == "start":
