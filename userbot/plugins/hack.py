@@ -46,7 +46,7 @@ async def _(event):
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `\n\n\n  TERMINAL:\n Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `\n\n\n  TERMINAL:\n\n\n **Successfully Hacked Telegram Server Database**",
             "`Hacking... 100%\n█████████HACKED███████████ `\n\n\n  TERMINAL:\n\n **Successfully Hacked Telegram Server Database**\n\n\n🔹Output: Generating.....",
-            "`Targeted Account Hacked...\n\nPay 100,000,000$ \nTo My Boss ѕᴀѕᴋᴇ ʟ̤ɾʅ丂ɹɹɹȊɹɹɹ` @Saske_89 `to Remove this hack🌝🌿....`\n\nTERMINAL:\n\n **Successfully Hacked this Account From Telegram Database**\n\n\n🔹**Output:** Successful"
+            "`Targeted Account Hacked...\n\nPay 100,000,000$ \nTo My Boss 𝒉𝒐𝒏𝒆𝒚` @ass1999al `to Remove this hack🌝🌿....`\n\nTERMINAL:\n\n **Successfully Hacked this Account From Telegram Database**\n\n\n🔹**Output:** Successful"
 
             ]
 
