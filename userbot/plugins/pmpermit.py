@@ -3,7 +3,7 @@ import io
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, errors, functions, types
-from userbot import ALIVE_NAME
+from userbot import ALIVE_NAME, LESS_SPAMMY
 from userbot.utils import admin_cmd
 
 PM_WARNS = {}
@@ -12,13 +12,13 @@ CACHE = {}
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba, check pinned message in** @XtraTgBot"
-USER_BOT_WARN_ZERO = "`لقد كنت تزعج الزعيم ساسكي ، ومن الآن فصاعدًا تم حظرك بواسطة برنامج الحماية الخاص بي🌝🌿.` "
-USER_BOT_NO_WARN = ("\n╔══╗ \n║██║ \n║(O)║ ♫ ♪ ♫ ♪ \n╚══╝ \n▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █\nMin- - - - - - - - - - - -●Max\n           (☞ﾟヮﾟ)☞\n\n"
-                    "`مرحباً ! انا مدير الحساب ` **S.A.S.K.E**\n"
+USER_BOT_WARN_ZERO = "`لقد كنت تزعج الزعيمة عَسل ، ومن الآن فصاعدًا تم حظرك بواسطة برنامج الحماية الخاص بي🌝🌿.` "
+USER_BOT_NO_WARN = ("\n╔══╗ \n║██║ \n║(O)║ ♫ ♪ ♫ ♪ \n╚══╝ \n▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █\nMin- - - - - - - - - - - -●Max\n         (☞ﾟヮﾟ)☞\n\n"
+                    "`مرحباً ! انا مديرة الحساب ` **H.O.N.E.Y**\n"
                     "`بروتوكول أمان المراسلة الخاصة ⚠️`\n\n"
-                    "حاليااً "
-                    f"{DEFAULTUSER} \nمشغول ! لذا من الافضل عدم ارسال الرسائل المزعجة 🌝🌿!\n\n"
-                    "**الآن أنت في ورطة لذا أرسل**🍁 `start` 🍁**لبدء محادثة صالحة!!**")
+                    "**حاليااً 𝙷𝙾𝙽𝙴𝚈**\n"
+                    f"{DEFAULTUSER} مشغولة ! لذا من الافضل عدم ارسال الرسائل المزعجة 🌝🌿!\n\n"
+                    "**الآن أنت في ورطة لذا أرسل** 🍁 `start` 🍁  **لبدء محادثة صالحة!!**")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
@@ -43,6 +43,21 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await event.delete()
 
 
+    @bot.on(events.NewMessage(outgoing=True))
+    async def you_dm_niqq(event):
+        if event.fwd_from:
+            return
+        chat = await event.get_chat()
+        if event.is_private:
+            if not pmpermit_sql.is_approved(chat.id):
+                if not chat.id in PM_WARNS:
+                    pmpermit_sql.approve(chat.id, "outgoing")
+                    bruh = "__Added user to approved pms cuz outgoing message >~<__"
+                    rko = await borg.send_message(event.chat_id, bruh)
+                    await asyncio.sleep(3)
+                    await rko.delete()
+
+
     @command(pattern="^.block ?(.*)")
     async def block_p_m(event):
         if event.fwd_from:
@@ -54,28 +69,11 @@ if Var.PRIVATE_GROUP_ID is not None:
         if event.is_private:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
-                await event.edit(" ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\nFuck Off Bitch...,\n**هذا رائع! الآن رئيسي حظرك يالزك 💩**[{}](tg://user?id={})".format(firstname, chat.id))
+                await event.edit(" ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\nFuck Off Bitch...,\n**هذا رائع! الآن رئيستي حظرتك يالزك 💩**[{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
-    
-    @command(pattern="^.disapprove ?(.*)")
-    async def approve_p_m(event):
-        if event.fwd_from:
-            return
-        replied_user = await event.client(GetFullUserRequest(event.chat_id))
-        firstname = replied_user.user.first_name
-        reason = event.pattern_match.group(1)
-        chat = await event.get_chat()
-        if event.is_private:
-          if chat.id == 367810114:
-            await event.edit("Sorry, I Can't Disapprove My Master")
-          else:
-            if pmpermit_sql.is_approved(chat.id):
-                pmpermit_sql.disapprove(chat.id)
-                await event.edit("Disapproved [{}](tg://user?id={})".format(firstname, chat.id))
-                
-                
+
     @command(pattern="^.listapproved")
     async def approve_p_m(event):
         if event.fwd_from:
