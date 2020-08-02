@@ -17,7 +17,8 @@ Best User Bot To Manage Your Telegram Account
 ### For any query or want to know how it works...?
 
 <a href="https://t.me/saske_89"><img src="https://img.shields.io/badge/Telegram-%20ѕᴀѕᴋᴇ ʟ̤ɾʅ丂ɹɹɹȊɹɹɹ-red.svg?logo=Telegram"></a>
-<a href="https://t.me/saske_89"><img src="https://img.shields.io/badge/Telegram-%20• 𝓗𝓐𝓝𝓔𝓨 ˛⁽🙊💞⇣-red.svg?logo=Telegram"></a>
+\n
+<a href="https://t.me/saske_89"><img src="https://img.shields.io/badge/Telegram-%20𝙷𝙰𝙽𝙴𝚈 ،💕🕸 ₎⇣-red.svg?logo=Telegram"></a>
 
 
 ## Installing Heroku 
